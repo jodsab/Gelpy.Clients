@@ -1,0 +1,14 @@
+const Routes = {
+  BASE: "/",
+  LOADER: "/LOADER",
+  CARROUSEL: "/CARROUSEL",
+  LOGIN: "/LOGGER",
+  ACCESSREGISTER: "/LOGGER/REGISTER",
+  ACCESSOTP: "/LOGGER/REGISTER/OTP",
+  ACCESSLOGIN: "/LOGGER/LOGIN",
+  HOME: "/HOME",
+  PROFILE: "/PROFILE",
+  WORKS: "/WORKS",
+};
+
+export default Routes;

@@ -1,0 +1,66 @@
+{
+    "login": {
+        "header": "CONECTANDO CON SEGURIDAD Y CONFIANZA",
+        "welcome": "¡Encantados que estés aquí!",
+        "accountMssg": "Inicie sesión con su cuenta o registrese y comencemos",
+        "btnLogin": "Iniciar sesión",
+        "btnRegister": "Registrese"
+    },
+    "loader": [
+        [
+            "Conectando0",
+            "con seguridad y confianza0"
+        ],
+        [
+            "Conectando21",
+            "con seguridad y confianza2"
+        ],
+        [
+            "Conectando31",
+            "con seguridad y confianza3"
+        ]
+    ],
+    "accessRegister": {
+        "header": "Regístrate con",
+        "other": "o completa nuestro formulario",
+        "name": "Nombres",
+        "lastName": "Apellidos",
+        "email": "E-mail",
+        "password": "Contraseña",
+        "cellphone": "Número de teléfono",
+        "city": "Ciudad",
+        "district": "Distrito",
+        "tyc1": "Al registrarte aceptas nuestras",
+        "tyc2": "condiciones de uso",
+        "tyc3": "y nuestra",
+        "tyc4": "política de privacidad",
+        "continue": "Continuar"
+    },
+    "accessOTP": {
+        "header": "Ingresa el código SMS",
+        "sendTo": "Se envió al",
+        "code": "Código de 4 dígitos",
+        "confirm": "Confirmar",
+        "error1": "¡No recibí el código!",
+        "error2": "Reenviar código"
+    },
+    "accessLogin": {
+        "header": "Inicia sesión con tu cuenta de",
+        "or": "o",
+        "email": "E-mail",
+        "password": "Contraseña",
+        "forgot": "¿Has olvidado tu contraseña?",
+        "login": "Iniciar sesión",
+        "newUser": "¿No tienes una cuenta?",
+        "register": "Registrate"
+    },
+    "home": {
+        "header": "Te ayudamos con...",
+        "searcher": "mi vehiculo, reparación eléctrica, limpieza doméstica, paseo de mascotas"
+    },
+    "bottomTabNavigator": {
+        "home": "Inicio",
+        "works": "Tareas",
+        "profile": "Perfil"
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "Gelpy.Clients",
+			"path": "../../Gelpy.Clients"
+		}
+	],
+	"settings": {}
+}

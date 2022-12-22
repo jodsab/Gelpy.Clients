@@ -1,0 +1,8 @@
+{
+    "login": {
+        "welcome": "We are happy you are here!",
+        "accountMssg": "Inicie sesión con su cuenta o registrese y comencemos",
+        "btnLogin": "Login",
+        "btnRegister": "Register"
+    }
+}
