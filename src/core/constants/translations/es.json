@@ -6,43 +6,22 @@
         "btnLogin": "Iniciar sesión",
         "btnRegister": "Registrese"
     },
-    "loader": [
-        [
-            "Conectando0",
-            "con seguridad y confianza0"
-        ],
-        [
-            "Conectando21",
-            "con seguridad y confianza2"
-        ],
-        [
-            "Conectando31",
-            "con seguridad y confianza3"
+    "carrousel": {
+        "next": "Omitir",
+        "loader": [
+            [
+                "Conectando0",
+                "con seguridad y confianza0"
+            ],
+            [
+                "Conectando21",
+                "con seguridad y confianza2"
+            ],
+            [
+                "Conectando31",
+                "con seguridad y confianza3"
+            ]
         ]
-    ],
-    "accessRegister": {
-        "header": "Regístrate con",
-        "other": "o completa nuestro formulario",
-        "name": "Nombres",
-        "lastName": "Apellidos",
-        "email": "E-mail",
-        "password": "Contraseña",
-        "cellphone": "Número de teléfono",
-        "city": "Ciudad",
-        "district": "Distrito",
-        "tyc1": "Al registrarte aceptas nuestras",
-        "tyc2": "condiciones de uso",
-        "tyc3": "y nuestra",
-        "tyc4": "política de privacidad",
-        "continue": "Continuar"
-    },
-    "accessOTP": {
-        "header": "Ingresa el código SMS",
-        "sendTo": "Se envió al",
-        "code": "Código de 4 dígitos",
-        "confirm": "Confirmar",
-        "error1": "¡No recibí el código!",
-        "error2": "Reenviar código"
     },
     "accessLogin": {
         "header": "Inicia sesión con tu cuenta de",
@@ -52,7 +31,83 @@
         "forgot": "¿Has olvidado tu contraseña?",
         "login": "Iniciar sesión",
         "newUser": "¿No tienes una cuenta?",
-        "register": "Registrate"
+        "register": "Registrate",
+        "form": {
+            "email": {
+                "input": "E-mail",
+                "required": "E-mail es requerido"
+            },
+            "password": {
+                "input": "Contraseña",
+                "required": "Contraseña es requerida"
+            }
+        },
+        "errors": {
+            "isNotSucceeded": "Usuario/Clave Incorrecta",
+            "isLockedOut": "Usuario Bloqueado",
+            "isNotAllowed": "Debe confirmar el correo electrónico"
+        }
+    },
+    "accessRegister": {
+        "header": "Regístrate con",
+        "other": "o completa nuestro formulario",
+        "form": {
+            "userName": {
+                "input": "Nombres",
+                "required": "Nombre es requerido"
+            },
+            "firstName": {
+                "input": "Nombres",
+                "required": "Nombre es requerido"
+            },
+            "lastName": {
+                "input": "Apellidos",
+                "required": "Apellido es requerido"
+            },
+            "email": {
+                "input": "E-mail",
+                "required": "Email es requerido"
+            },
+            "countryCode": {
+                "input": "Codigo",
+                "required": "Codigo es requerido"
+            },
+            "password": {
+                "input": "Contraseña",
+                "required": "Contraseña es requerida",
+                "minChars": "Contraseña debe tener al menos 6 caracteres",
+                "alphaNumeric": "Contraseña debe tener al menos un carácter alfanumérico",
+                "lowerCase": "Contraseña debe tener al menos un caracter en minúscula",
+                "upperCase": "Contraseña debe tener al menos un caracter en mayúscula"
+            },
+            "cellphone": {
+                "input": "Número de teléfono",
+                "required": "Número de teléfono es requerido",
+                "matches": "Debe contener solo números",
+                "chars": "El número de teléfono debe contener 9 caracteres"
+            },
+            "city": {
+                "input": "Ciudad",
+                "required": "Ciudad es requerida"
+            },
+            "district": {
+                "input": "Distrito",
+                "required": "Distrito es requerido"
+            }
+        },
+        "tyc1": "Al registrarte aceptas nuestras",
+        "tyc2": "condiciones de uso",
+        "tyc3": "y nuestra",
+        "tyc4": "política de privacidad",
+        "continue": "Continuar"
+    },
+    "accessOTP": {
+        "header": "Ingresa el código SMS",
+        "sendTo": "Se envió al",
+        "code": "Código de 6 dígitos",
+        "confirm": "Confirmar",
+        "error1": "¡No recibí el código!",
+        "error2": "Reenviar código"
     },
     "home": {
         "header": "Te ayudamos con...",

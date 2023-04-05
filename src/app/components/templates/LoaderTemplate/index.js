@@ -7,7 +7,7 @@ const LoaderTemplate = () => {
     <View style={styles.container}>
       <Image
         style={styles.logo}
-        source={require("../../../../../assets/imgs/LogoBlanco.png")}
+        source={require("../../../../../assets/imgs/Feliz.png")}
       />
     </View>
   );

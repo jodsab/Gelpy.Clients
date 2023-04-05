@@ -7,15 +7,16 @@ import GDotes from "../../atoms/GDotes";
 import * as t from "../../../../core/constants/translations/index";
 import navigations from "../../../../shared/navigations";
 import { useSelector } from "react-redux";
+import GText from "../../atoms/GText";
 import styles from "./styles";
 
 const CarrouselTemplate = ({ navigation }) => {
   const [actualActive, setActualActive] = useState(0);
-  const [exitActive, setExitActive] = useState(false);
 
   const width = Dimensions.get("window").width;
   const storedData = useSelector((state) => state?.auth);
-  const m = t?.default?.loader;
+  const m = t?.default?.carrousel?.loader;
+  const n = t?.default?.carrousel?.next;
 
   const IS_CONNECTED = storedData?.currentUser?.token;
 
@@ -28,13 +29,8 @@ const CarrouselTemplate = ({ navigation }) => {
   return (
     <View style={{ flex: 1 }}>
       <View style={styles.exit}>
-        <TouchableOpacity
-          onPress={() => redirectIfIsConnected()}
-          disabled={exitActive ? false : true}
-        >
-          <Text style={[styles.exitText, exitActive ? styles.on : styles.off]}>
-            Omitir
-          </Text>
+        <TouchableOpacity onPress={() => redirectIfIsConnected()}>
+          <GText style={styles.next}>{n}</GText>
         </TouchableOpacity>
       </View>
       <GestureHandlerRootView>
@@ -44,10 +40,9 @@ const CarrouselTemplate = ({ navigation }) => {
           height={"100%"}
           autoPlay={false}
           data={m}
-          scrollAnimationDuration={700}
+          scrollAnimationDuration={600}
           onSnapToItem={(index) => {
             setActualActive(index);
-            setExitActive(true);
           }}
           renderItem={({ item }) => <CarrouselItem text={item} />}
           panGestureHandlerProps={{

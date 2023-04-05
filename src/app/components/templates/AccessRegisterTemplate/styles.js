@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 23,
-    fontWeight: "bold",
     color: colors.BLUE,
     textAlign: "center",
   },
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
   },
   blue: {
-    color: colors.PURPLE,
+    color: colors.BLUE,
     fontSize: 11,
   },
   textContinue: {

@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "./styles";
 import { globalStyles } from "../../../../shared/global-styles";
-import FontText from "../../atoms/GText";
+import GText from "../../atoms/GText";
 import * as t from "../../../../core/constants/translations/index.js";
 import navigations from "../../../../shared/navigations";
 
@@ -11,7 +11,7 @@ const LoginTemplate = ({ navigation }) => {
   return (
     <View style={styles.body}>
       <View style={styles.top}>
-        <Text style={styles.header}>{m?.header}</Text>
+        <GText style={styles.header}>{m?.header}</GText>
         <Image
           style={styles.logo}
           source={require("../../../../../assets/imgs/InLoveBlanco.png")}
@@ -20,28 +20,30 @@ const LoginTemplate = ({ navigation }) => {
       <View style={styles.bottom}>
         <View style={styles.circle}></View>
         <View style={styles.spaceBottom}>
-          <Text style={[styles.white, styles.bigText]}>{m?.welcome}</Text>
-          <Text style={[styles.white, styles.getStarted]}>
+          <GText style={[styles.white, styles.bigText]} bold={true}>
+            {m?.welcome}
+          </GText>
+          <GText style={[styles.white, styles.getStarted]}>
             {m?.accountMssg}
-          </Text>
+          </GText>
           <View style={styles.buttons}>
             <TouchableOpacity
               disabled={false}
               onPress={() => navigation.navigate(navigations.ACCESSLOGIN)}
               style={[styles.capsule, styles.login]}
             >
-              <Text style={[styles.loginText, globalStyles.buttonPadding]}>
+              <GText style={[styles.loginText, globalStyles.buttonPadding]}>
                 {m?.btnLogin}
-              </Text>
+              </GText>
             </TouchableOpacity>
             <TouchableOpacity
               disabled={false}
               onPress={() => navigation.navigate(navigations.ACCESSREGISTER)}
               style={[styles.capsule, styles.register]}
             >
-              <Text style={[styles.registerText, globalStyles.buttonPadding]}>
+              <GText style={[styles.registerText, globalStyles.buttonPadding]}>
                 {m?.btnRegister}
-              </Text>
+              </GText>
             </TouchableOpacity>
           </View>
         </View>

@@ -1,7 +1,7 @@
 import { View, Text, FlatList } from "react-native";
 import React from "react";
 import GInput from "../../atoms/GInput";
-import { SafeAreaView } from "react-native-safe-area-context";
+import GText from "../../atoms/GText";
 import GCategoriesView from "../../molecules/GCategoriesView";
 import * as t from "../../../../core/constants/translations";
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
@@ -10,11 +10,8 @@ import colors from "../../../../shared/colors";
 
 const HomeTemplate = ({ navigation, categories }) => {
   const renderItem = ({ item }) => <GCategoriesView item={item} />;
-  console.log("//////", categories?.categories);
 
   const m = t?.default?.home;
-
-  console.log("m", m);
   return (
     <View style={styles.container}>
       <View style={styles.spaceBetween}>
@@ -27,7 +24,9 @@ const HomeTemplate = ({ navigation, categories }) => {
           <FontAwesome name="search" size={20} color="white" />
         </View>
       </View>
-      <Text style={styles.header}>{m?.header}</Text>
+      <GText style={styles.header} bold>
+        {m?.header}
+      </GText>
       <GInput
         icon={<FontAwesome name="search" size={12} color={colors.GRAY} />}
         inputStyles={{ height: 50, paddingRight: 10 }}

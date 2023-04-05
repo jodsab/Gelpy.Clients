@@ -1,6 +1,7 @@
 import { View, Text, Image } from "react-native";
 import React from "react";
 import styles from "./styles";
+import GText from "../../atoms/GText";
 
 const CarrouselItem = ({ text }) => {
   return (
@@ -9,8 +10,10 @@ const CarrouselItem = ({ text }) => {
         style={styles.logo}
         source={require("../../../../../assets/imgs/Feliz.png")}
       />
-      <Text style={styles.textLight}>{text[0]}</Text>
-      <Text style={styles.textBold}>{text[1]}</Text>
+      <GText style={styles.textLight}>{text[0]}</GText>
+      <GText style={styles.textBold} bold>
+        {text[1]}
+      </GText>
     </View>
   );
 };

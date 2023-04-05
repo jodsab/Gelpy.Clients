@@ -15,16 +15,15 @@ const styles = StyleSheet.create({
     position: "absolute",
     zIndex: 9,
     right: 4,
+    top: 4,
   },
-  exitText: {
+  next: {
     fontSize: 16,
-    padding: 7,
-  },
-  off: {
-    color: "rgba(192,192,192,1)",
-  },
-  on: {
-    color: colors.BLUE,
+    paddingVertical: 4,
+    paddingHorizontal: 12,
+    color: "white",
+    backgroundColor: colors.ORANGE,
+    borderRadius: 8,
   },
 });
 

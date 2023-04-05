@@ -2,13 +2,18 @@ import { View, Text } from "react-native";
 import { useFonts } from "expo-font";
 import React from "react";
 
-const GText = ({ styles, children }) => {
+const GText = ({ style, bold, children, ...props }) => {
   const [loaded] = useFonts({
-    GilroyMedium: require("../../../../fonts/Gilroy-Medium.ttf"),
+    GilroyMedium: require("../../../../../assets/fonts/Gilroy-Medium.ttf"),
+    GilroyBold: require("../../../../../assets/fonts/Gilroy-Bold.ttf"),
   });
   if (loaded) {
     return (
-      <Text style={[{ fontFamily: "GilroyMedium" }, styles]}>{children}</Text>
+      <Text
+        style={[{ fontFamily: bold ? "GilroyBold" : "GilroyMedium" }, style]}
+      >
+        {children}
+      </Text>
     );
   }
 };

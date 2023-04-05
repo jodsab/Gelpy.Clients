@@ -33,12 +33,12 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: "white",
-    width: "18%",
-    height: 50,
+    width: "12%",
+    height: 40,
     borderRadius: 6,
     justifyContent: "center",
     alignItems: "center",
-    fontSize: 25,
+    fontSize: 22,
     textAlign: "center",
   },
   bottom: {

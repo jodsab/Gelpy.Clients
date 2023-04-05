@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   bigText: {
-    fontWeight: "bold",
     fontSize: 20,
     marginBottom: 10,
   },

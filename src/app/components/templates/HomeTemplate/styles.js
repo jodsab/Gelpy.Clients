@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 21,
     color: colors.BLUE,
-    fontWeight: "bold",
   },
   list: {
     marginTop: 10,

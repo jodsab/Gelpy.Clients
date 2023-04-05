@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingBottom: 200,
+    paddingBottom: 100,
   },
   logo: {
     height: 180,
@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   textBold: {
-    fontWeight: "bold",
     color: colors.BLUE,
     fontSize: 24,
     width: "50%",

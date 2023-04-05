@@ -26,6 +26,7 @@ const TabRouter = () => {
           paddingTop: 10,
           height: 70,
           backgroundColor: "#F1F1F1",
+          width: "100%",
         },
         tabBarLabel: ({ tintColor, focused, item, ...props }) => {
           return focused ? (
@@ -41,9 +42,11 @@ const TabRouter = () => {
         tabBarLabelStyle: {
           color: colors.GRAY,
           fontSize: 14,
+          alignSelf: "center",
         },
         tabBarIconStyle: {
           color: "red",
+          width: 35,
         },
         tabBarInactiveTintColor: colors.GRAY,
         tabBarActiveTintColor: colors.PURPLE,

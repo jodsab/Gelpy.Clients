@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 20,
   },
+  container2: {
+    flex: 1,
+  },
   logo: {
     marginLeft: "auto",
     marginRight: "auto",
